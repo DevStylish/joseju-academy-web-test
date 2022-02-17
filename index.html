@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseju Academy. Inicio</title>
+  <link rel="stylesheet" href="css/custom.min.css">
+</head>
+
+<!--
+  Añadidos a realizar:
+  - Boton (hecho).
+  - Imagen (hecho).
+  - Tarjetas con imagenes (hechos).
+  - Textos responsivos (hechos).
+  - Modal (hecho)
+  - Spinner.
+-->
+
+<body>
+
+  <!-- Sección navbar menu -->
+
+  <header id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="src/images/logo.png" alt="logo-brand"> Joseju Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fin de la sección navbar menu -->
+
+  <main>
+    <!-- Sección del banner -->
+
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="promo-title">Crea mejores videojuegos</p>
+            <p>Si quieres aprender a diseñar videojuegos de calidad, estas en el sitio correcto, siguenos para saber más
+              acerca de la Joseju Academy.</p>
+            <img src="src/images/play.png" alt="play-video" class="play-btn" data-bs-toggle="modal"
+              data-bs-target="#videoModal">Presiona en el boton para ver uno de nuestros videos.
+            <!-- Modal -->
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Video presentación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-4x3">
+                      <iframe src="https://www.youtube.com/embed/_3g-Y0aBxzs" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="src/images/home2.png" alt="home" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <img src="src/images/wave1.png" alt="bottom-img">
+    </section>
+
+    <!-- Fin de la sección del banner -->
+
+    <!-- Sección de los servicios -->
+
+    <section id="servicios">
+      <div class="container text-center">
+        <h1 class="title text-uppercase">¿Que hacemos?</h1>
+        <div class="row text-center">
+          <div class="col-md-4 servicio">
+            <div class="card d-flex align-items-center border-primary">
+              <img src="src/images/service1.png" alt="servicio1" class="servicio-img card-img-top">
+              <div class="card-body">
+                <h4>Crecimiento en el mercado</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tempore alias
+                  repellat et dolor,
+                  assumenda at magnam minima voluptatem hic.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 servicio">
+            <div class="card d-flex align-items-center border-primary">
+              <img src="src/images/service2.png" alt="servicio1" class="servicio-img card-img-top">
+              <div class="card-body">
+                <h4>Difusión de tu juego</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tempore alias
+                  repellat et dolor,
+                  assumenda at magnam minima voluptatem hic.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 servicio">
+            <div class="card d-flex align-items-center border-primary">
+              <img src="src/images/service3.png" alt="servicio1" class="servicio-img card-img-top">
+              <div class="card-body">
+                <h4>Enseñanzas de videojuegos</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tempore alias
+                  repellat et dolor,
+                  assumenda at magnam minima voluptatem hic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary">All servicies</button>
+      </div>
+    </section>
+
+    <!-- Sección de About us -->
+    <section id="about-us" class="bg-light">
+      <div class="container">
+        <h1 class="title text-uppercase text-center">¿Por qué escogernos?</h1>
+        <div class="row">
+          <div class="col-md-6 about-us">
+            <p class="about-title text-center">Somos diferentes</p>
+            <ul class="text-center">
+              <li>Te animamos</li>
+              <li>Esperamos al Elden Ring</li>
+              <li>Hideo Kojima deja los porros</li>
+              <li>Por favor, no hagas como Cyberpunk 2077</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <img src="src/images/network.png" alt="network" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de las social medias -->
+
+    <section id="social-media" class="bg-light">
+      <div class="container text-center">
+        <p class="text-uppercase">Siguenos en nuestras redes sociales</p>
+        <div class="social-icons">
+          <a href="#"><img src="src/images/facebook-icon.png" alt="facebook"></a>
+          <a href="#"><img src="src/images/instagram-icon.png" alt="instagram"></a>
+          <a href="#"><img src="src/images/linkedin-icon.png" alt="linkedin"></a>
+          <a href="#"><img src="src/images/twitter-icon.png" alt="twitter"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fin de la sección de las social medias -->
+  </main>
+
+  <!-- Inicio del footer -->
+
+  <footer>
+    <img src="src/images/wave2.png" alt="wave2" class="footer-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-box">
+          <img src="src/images/logo.png" alt="logo"> <a href="#" class="navbar-brand">Joseju Academy</a>
+          <p>Suscribete al canal de Joseju para ver más videos sobre diseño de videojuegos, memes, y además aprender
+            sobre que: un NFT no es una imagen… hacer imagenes bonitas es facil, un NFT es una “llave” para acceder a
+            algo, el crear ese “algo” es lo dificil. Puede ser una comunidad, un juego, metaversos, mas NFTs, una
+            experiencia… Una vez se entiende esto, posibilidades son infinitas (Willyrex. 27 dic. 2021).</p>
+        </div>
+        <div class="col-md-4 footer-box">
+          <p><b class="text-uppercase">Contactanos</b></p>
+          <p>Madrid, Spain</p>
+          <p>+34 654654784</p>
+          <p>contact@josejua.com</p>
+        </div>
+        <div class="col-md-4 footer-box">
+          <p><b class="text-uppercase">Suscribete a nuestras noticias</b></p>
+          <input type="email" class="form-control" placeholder="Tu email" />
+          <button type="button" class="btn btn-primary">Suscribirse</button>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <p class="copyright text-center">Website diseñada por "Manolo el del bar"</p>
+    </div>
+  </footer>
+
+  <!-- Fin del footer -->
+
+  <script src="src/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/custom/custom.js"></script>
+</body>
+
+</html>

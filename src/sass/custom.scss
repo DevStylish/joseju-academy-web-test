@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap');
+
+$primary: #5f1782;
+$light: #f8f9fa;
+$color-image: linear-gradient(to right, #a517, #5f1782);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+// Sección del nav
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: $color-image;
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    height: 70px;
+    padding-left: 20px;
+}
+
+.navbar-nav a{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+// Fin de la seccion del nav
+
+// Seccion del banner
+
+#banner{
+    background-image: $color-image;
+    color: #fff;
+    padding-top: 5%;
+}
+
+.promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px
+}
+
+.play-btn{
+    cursor: pointer;
+    width: 45px;
+    margin-right: 20px;
+}
+
+.bottom-img{
+    width: 100%;
+}
+
+.modal{
+    color: #000;
+}
+
+// Fin de la seccion del banner
+
+// Inicio de la seccion de servicios
+
+#servicios{
+    padding: 80px 0;
+}
+
+.servicio{
+    padding: 20px;
+}
+
+.servicio h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.servicio-img{
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.title::before{
+    content: '';
+    background: $primary;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(55px);
+}
+
+#servicios .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+}
+
+// Fin de la sección de servicios
+
+// Inicio de la sección sobre nosotros
+
+#about-us{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.about-title{
+    font-size: 40px;
+    margin-top: 8%;
+}
+
+#about-us ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+// Fin de la sección sobre nosotros
+
+// Inico de la sección de social media
+
+#social-media{
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+#social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.social-icons img{
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+
+// Fin las social medias
+
+// Inico del footer
+
+footer{
+    background-image: $color-image;
+    color: #fff;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-box{
+    padding: 20px;
+}
+
+.footer-box img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn{
+    box-shadow: none !important;
+    border: none;
+    margin-top: 30px;
+    background-image: $color-image;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+// Fin del footer
